@@ -1,0 +1,150 @@
+@import 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    font-size: 18px
+    font-family: 'Kumbh Sans', sans-serif
+    background-color: $dark-cyan
+
+.profile
+    position: relative
+    background-color: white
+    border-radius: 15px
+    z-index: 1
+
+.profile-pattern-img
+    border-radius: 15px 15px 0 0
+
+.profile-img img
+    position: absolute
+    top:90px
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 50%
+    border: 5px solid white
+
+.profile-personal
+    margin: 75px 0 25px 0
+    text-align: center
+
+.profile-personal-name
+    font-size: 18px
+
+.profile-personal-age
+    color: $dark-gray
+    font-weight: 400
+
+.profile-personal-city
+    margin-top: 10px
+    font-size: 13px
+    color: $dark-gray
+
+.profile-stats
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 25px 0
+
+.profile-stat
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 80px
+
+.profile-stat-amount
+    font-weight: bold
+    margin-bottom: 5px
+
+.profile-stat-info
+    color: $dark-gray
+    font-size: 10px
+    letter-spacing: 1px
+
+.bg-pattern
+    display: block
+    position: fixed
+    z-index: -1
+
+.bg-pattern-top
+    top: -500px
+    left: -300px
+
+.bg-pattern-bottom
+    bottom: -650px
+    right: -200px
+
+footer 
+    position: fixed
+    bottom: 1em
+    font-size: 11px
+    text-align: center
+
+footer a 
+    color: hsl(228, 45%, 44%)
+
+@media ( max-width: 1200px)
+    .bg-pattern-top
+        left: -400px
+
+    .bg-pattern-bottom
+        right: -300px
+
+@media ( max-width: 992px)
+    .bg-pattern-top
+        left: -500px
+
+    .bg-pattern-bottom
+        right: -450px
+
+@media ( max-width: 768px)
+    .bg-pattern-top
+        left: -600px
+
+    .bg-pattern-bottom
+        right: -550px
+
+@media ( max-width: 576px)
+    .bg-pattern-top
+        left: -700px
+
+    .bg-pattern-bottom
+        right: -650px
+
+@media ( max-width: 376px)
+    .bg-pattern-top
+        left: -750px
+
+    .bg-pattern-bottom
+        right: -700px
+
+@media ( max-width: 370px)
+    .profile
+        max-width: 100%
+    
+    .profile-pattern-img
+        width: 100%
+
+    .profile-img img
+        position: relative
+        top:0
+        width: 30%
+        margin-bottom: 10px
+
+    .profile-personal
+        margin: 0 0 10px 0
+
+    .bg-pattern-top
+        left: -850px
+
+    .bg-pattern-bottom
+        right: -800px
