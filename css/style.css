@@ -55,6 +55,10 @@ body {
   color: hsl(0, 0%, 59%);
 }
 
+hr {
+  border: 1px solid #eee;
+}
+
 .profile-stats {
   display: flex;
   justify-content: space-evenly;
